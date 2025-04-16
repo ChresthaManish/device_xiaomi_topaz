@@ -12,10 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/topaz/device.mk)
 
 # Inherit some common derp stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# To include Gapps 
-WITH_GMS := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_topaz
 PRODUCT_DEVICE := topaz
